@@ -1,13 +1,27 @@
 const gulp = require('gulp');
-const gulpMinify = require('gulp-minify');
 const sass = require('gulp-sass');
 sass.compiler = require('node-sass');
+ 
+gulp.task('babel', () => {
+  return gulp
+    .src('src/assets/scripts/*.js')
+    .pipe(babel({
+        presets: ['@babel/preset-env']
+    }))
+    .pipe(gulp.dest('public/scripts'));
+});
 
 gulp.task('sass', () => {
   return gulp
     .src('src/assets/styles/app.scss')
-    .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+    .pipe(sass({outputStyle: 'uglifyed'}).on('error', sass.logError))
     .pipe(gulp.dest('public/styles')); 
+});
+
+gulp.task('copy-scripts', function() {
+  return gulp
+    .src('src/assets/scripts/*.js')
+    .pipe(gulp.dest('public/scripts'));
 });
  
 gulp.task('copy-pwa', function() {
@@ -28,30 +42,18 @@ gulp.task('copy-images', function() {
     .pipe(gulp.dest('public/images'));
 });
 
-gulp.task('compress', () => {
-  return gulp
-    .src('src/assets/scripts/*.js')
-    .pipe(gulpMinify({
-      ext:{
-        min:'.min.js'
-      },
-    }))
-    .pipe(gulp.dest('public/scripts'));
-});
-
 gulp.task('copy-assets', [
   'copy-pwa',
   'copy-favicon',
   'copy-images',
 ]);
 
-gulp.task('dev', ['compress','sass'], () => {
-  gulp.watch('src/assets/styles/app.scss', ['sass']);
-  gulp.watch('src/assets/scripts/*.js', ['compress']);
+gulp.task('dev', ['sass','copy-scripts'], () => {
+  gulp.watch('src/assets/scripts/*.js', ['copy-scripts']);
+  gulp.watch('src/assets/styles/**/*.scss', ['sass']);
 });
 
 gulp.task('default', [
-  'compress', 
-  'copy-assets',
   'sass',
+  'copy-assets',
 ]);

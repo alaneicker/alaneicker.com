@@ -10,10 +10,10 @@
   </div>
   <div class="header__nav">
     <nav>
-      <ul class="main-nav">
+      <ul id="main-nav" class="main-nav">
         @model.nav.forEach(function (link) {
           <li>
-            <a href="#@link.section">
+            <a class="local-link" href="#@link.section">
               @link.text
             </a>
           </li>

@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Personal Website of Alan Eicker, a Chicago Based UI Engineer",
   "scripts": {
-    "browserSync": "browser-sync start --no-notify --proxy localhost:4000 --files src/**/*",
+    "browserSync": "browser-sync start --no-notify --proxy localhost:4000 --files src/*",
     "dev": "concurrently --kill-others \"npm run gulp dev\" \"npm run browserSync\" \"npm run start:dev\"",
     "gulp": "gulp",
     "lint": "eslint \"src/**/*.js\" \"server.js\"",
@@ -20,8 +20,10 @@
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.1",
+    "clientside-require": "^4.7.2",
     "compression": "^1.7.0",
     "express": "^4.15.4",
+    "smoothscroll-polyfill": "^0.4.4",
     "vash": "^0.12.2",
     "yamljs": "^0.3.0"
   },
@@ -31,6 +33,7 @@
     "concurrently": "^3.5.0",
     "eslint": "^4.7.1",
     "gulp": "^3.9.1",
+    "gulp-babel": "^8.0.0",
     "gulp-minify": "^3.1.0",
     "gulp-sass": "^4.0.2",
     "mocha": "^3.5.3",

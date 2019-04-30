@@ -1,4 +1,4 @@
-<section id="career-journey" class="u-background-light-gray">
+<section id="kudos" class="u-background-light-gray">
   <h2 class="u-text-xl u-text-semibold u-align-center--medium u-vr-5">
     @model.headings.kudos
   </h2>

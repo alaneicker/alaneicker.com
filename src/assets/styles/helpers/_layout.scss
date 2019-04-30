@@ -10,5 +10,6 @@
   &__body {
     height: calc(100% - 50px);
     overflow: auto;
+    scroll-behavior: smooth;
   }
 }

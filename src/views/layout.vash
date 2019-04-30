@@ -26,6 +26,5 @@
     @html.block('body')
 	</body>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Tocca.js/2.0.3/Tocca.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/14.2.1/smooth-scroll.min.js"></script>
-	<script src="/scripts/app.min.js"></script>
+	<script src="/scripts/app.js"></script>
 </html>

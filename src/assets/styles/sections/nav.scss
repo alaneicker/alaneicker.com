@@ -18,11 +18,14 @@
     border-bottom: rem(1) solid rgba(255, 255, 255, 0.4);
     line-height: rem(50);
 
-    &:hover,
-    &.is-active {
+    &:hover {
       background: lighten($navy, 10%);
       text-decoration: none;
     }
+  }
+
+  & > li.is-active > a {
+    background: lighten($navy, 10%);
   }
 
   @media (min-width: $breakpoint-medium) {

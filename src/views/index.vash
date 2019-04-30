@@ -9,7 +9,7 @@
         @html.include("../partials/skills")
         @html.include("../partials/code-experiements")
         @html.include("../partials/career-journey")
-         @html.include("../partials/kudos")
+        @html.include("../partials/kudos")
         @html.include("../partials/footer")
       </div>
     </div>
