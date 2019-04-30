@@ -1,0 +1,11 @@
+@import '../../styles/tools';
+
+.footer {
+  background: $navy;
+  color: $white;
+  padding: rem(16);
+
+  @media (min-width: $breakpoint-large) {
+    padding: rem(24);
+  }
+}

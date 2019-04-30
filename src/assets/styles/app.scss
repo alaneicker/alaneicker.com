@@ -11,6 +11,7 @@
 	'helpers/base',
 	'helpers/buttons',
 	'helpers/flexbox',
+	'helpers/layout',
 	'helpers/h-list',
 	'helpers/text',
 	'helpers/u-list',
@@ -18,16 +19,15 @@
 	'helpers/vr';
 
 @import
-	'../components/career-journey/career-journey',
-	'../components/code-experiments/code-experiments',
-	'../components/footer/footer',
-	'../components/header/header',
-	'../components/hero/hero',
-	'../components/kudos/kudos',
-	'../components/layout/layout',
-	'../components/logo/logo',
-	'../components/nav/nav',
-	'../components/skills/skills.scss';
+	'sections/career-journey',
+	'sections/code-experiments',
+	'sections/footer',
+	'sections/header',
+	'sections/hero',
+	'sections/kudos',
+	'sections/logo',
+	'sections/nav',
+	'sections/skills';
 
 @media(min-width: $breakpoint-small) {
 	@import 

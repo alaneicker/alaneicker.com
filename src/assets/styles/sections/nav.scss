@@ -1,0 +1,48 @@
+@import "../../styles/tools";
+
+.main-nav {
+  background: darken($navy, 5%);
+  box-shadow: 0 0 rem(6) rgba(0, 0, 0, 0.7);
+  position: fixed;
+  left: rem(-280);
+  top: 0;
+  bottom: 0;
+  width: rem(280);
+  transition: left 0.2s linear;
+
+  &.is-open {
+    left: 0;
+  }
+
+  & > li > a {
+    display: block;
+    padding: rem(0 16);
+    border-bottom: rem(1) solid rgba(255, 255, 255, 0.4);
+    line-height: rem(50);
+
+    &:hover,
+    &.is-active {
+      background: lighten($navy, 10%);
+      text-decoration: none;
+    }
+  }
+
+  @media (min-width: $breakpoint-medium) {
+    background: transparent;
+    box-shadow: none;
+    position: static;
+    display: flex;
+    width: auto;
+
+    & > li > a {
+      border: none;
+      padding: rem(0 8);
+    }
+  }
+
+  @media (min-width: $breakpoint-large) {
+    & > li > a {
+      padding: rem(0 16);
+    }
+  }
+}

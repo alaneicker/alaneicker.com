@@ -1,0 +1,22 @@
+@import '../../styles/tools';
+
+.logo {
+  display: flex;
+  text-transform: uppercase;
+  
+  &:hover {
+    text-decoration: none;
+  }
+
+  & > * + * {
+    margin-left: rem(4);
+  }
+
+  &__text {
+    font-weight: $font-semibold;
+  }
+
+  &__tagline {
+    font-weight: $font-light;
+  }
+}
