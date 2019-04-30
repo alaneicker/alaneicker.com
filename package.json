@@ -1,0 +1,42 @@
+{
+  "name": "node-alaneicker-com",
+  "version": "1.0.0",
+  "description": "Personal Website of Alan Eicker, a Chicago Based UI Engineer",
+  "scripts": {
+    "browserSync": "browser-sync start --no-notify --proxy localhost:4000 --files src/**/*",
+    "dev": "concurrently --kill-others \"npm run gulp dev\" \"npm run browserSync\" \"npm run start:dev\"",
+    "gulp": "gulp",
+    "lint": "eslint \"src/**/*.js\" \"server.js\"",
+    "start:dev": "nodemon server.js",
+    "start": "node server.js",
+    "test": "nyc mocha \"src/tests/**/*.spec.js\"",
+    "postinstall": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alaneicker/alaneicker.com.git"
+  },
+  "author": "Alan Eicker",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.1",
+    "compression": "^1.7.0",
+    "express": "^4.15.4",
+    "vash": "^0.12.2",
+    "yamljs": "^0.3.0"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "chai-http": "^3.0.0",
+    "concurrently": "^3.5.0",
+    "eslint": "^4.7.1",
+    "gulp": "^3.9.1",
+    "gulp-minify": "^3.1.0",
+    "gulp-sass": "^4.0.2",
+    "mocha": "^3.5.3",
+    "node-sass": "^4.5.3",
+    "nodemon": "^1.12.1",
+    "nyc": "^11.2.1",
+    "sinon": "^3.3.0"
+  }
+}
