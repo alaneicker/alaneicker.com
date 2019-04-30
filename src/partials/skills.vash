@@ -5,6 +5,7 @@
 
   <div class="u-flex--large u-flex--hr-3">
     <div class="u-flex__item u-flex__item--grow">
+      
       <h2 class="u-text-lg u-text-semibold u-vr-3">@model.headings.skillsList</h2>
       <div class="u-vr-6">
         @model.coreSkills.forEach(function (skill) {
@@ -16,6 +17,23 @@
           </div>
         })
       </div>
+
+      <h2 class="u-text-lg u-text-semibold u-vr-3">@model.headings.otherSkillsList</h2>
+      <div class="u-vr-6">
+        <ul class="h-list h-list--comma-delimited">
+          @model.otherSkills.forEach(function (skill) {
+            <li>@skill</li>
+          })
+        </ul>
+      </div>
+
+      <h2 class="u-text-lg u-text-semibold u-vr-3">@model.headings.currentInterests</h2>
+      <ul class="h-list h-list--comma-delimited">
+        @model.currentInterests.forEach(function (interest) {
+          <li>@interest</li>
+        })
+      </ul>
+
     </div>
     <div class="u-flex__item u-flex__item--no-shrink">
       <h2 class="u-text-lg u-text-semibold u-vr-3">@model.headings.projects</h2>
