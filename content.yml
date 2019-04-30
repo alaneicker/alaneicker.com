@@ -2,14 +2,14 @@
 docTitle: Alan Eicker | UI Engineer
 
 # Contact Info
-constact:
-  - phone: 224-622-7278
-  - email: alaneicker@gmail.com
+contact:
+  phone: 224-622-7278
+  email: alaneicker@gmail.com
 
 # Header
 logo:
-  - text: Alan Eicker
-  - tagline: UI Engineer
+  text: Alan Eicker
+  tagline: UI Engineer
 
 nav:
   - text: About Me

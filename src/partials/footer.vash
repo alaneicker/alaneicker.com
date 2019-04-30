@@ -1,0 +1,13 @@
+<footer class="footer">
+  <div class="u-flex--medium u-flex--middle u-flex--equalCols">
+    <div class="u-align-center u-text-xs">
+      <a class="u-text-inverse" href="mailto:@model.contact.email">@model.contact.email</a> &bull; @model.contact.phone
+    </div>
+    <ul class="u-align-center u-text-xs h-list">
+      
+    </ul>
+    <div class="u-align-center u-text-xs">
+      &copy; @model.copyrightYear Alan Eicker. All rights reserved.
+    </div>
+  </div>
+</footer>

@@ -6,7 +6,7 @@ const env = process.env.NODE_ENV || 'development';
 const model = require('yamljs').load('content.yml');
 
 app.set('view engine', 'vash');
-app.set('views', `${__dirname}/src/app/views`);
+app.set('views', `${__dirname}/src/views`);
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());

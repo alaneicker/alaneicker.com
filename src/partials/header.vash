@@ -1,0 +1,27 @@
+<header class="header">
+  <div class="header__logo">
+    <a class="logo" href="#hero">
+      <div class="logo__image">
+        <!--<img src="" alt="" />-->
+      </div>
+      <div class="logo__text">@model.logo.text</div>
+      <div class="logo__tagline">@model.logo.tagline</div>
+    </a>
+  </div>
+  <div class="header__nav">
+    <nav>
+      <ul class="main-nav">
+        @model.nav.forEach(function (link) {
+          <li>
+            <a href="#@link.section">
+              @link.text
+            </a>
+          </li>
+        })
+      </ul>
+      <button class="is-hidden--medium c-btn c-btn--mobile">
+        Menu
+      </button>
+    </nav>
+  </div>
+</header>

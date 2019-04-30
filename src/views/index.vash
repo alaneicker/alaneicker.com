@@ -1,8 +1,13 @@
-<div class="layout">
-  <div class="layout__header">
+@html.extend('layout',function (model) {
+	@html.block('body',function (model) {
+		<div class="layout">
+      <div class="layout__header">
+        @html.include("../partials/header")
+      </div>
+      <div class="layout__body">
 
-  </div>
-  <div class="layout__body">
-
-  </div>
-</div>
+        @html.include("../partials/footer")
+      </div>
+    </div>
+	})
+})
