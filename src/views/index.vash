@@ -5,7 +5,7 @@
         @html.include("../partials/header")
       </div>
       <div class="layout__body">
-
+        @html.include("../partials/hero")
         @html.include("../partials/footer")
       </div>
     </div>

@@ -51,9 +51,9 @@ headings:
   - kudos: Kudos
 
 hero:
-  - heading: Hi, I'm Alan.
-  - subHeading: I Build Beautiful User Experiences.
-  - text:
+  heading: Hi, I'm Alan.
+  subHeading: I Build Beautiful User Experiences.
+  text:
     - > 
       I began my journey twelve years ago as a junior UI engineer for a small design company building 
       ColdFusion websites for construction companies. Today, I lead the UI efforts for one of America's largest insurance companies, working with technologies such as Angular 7, React and Node.js.
