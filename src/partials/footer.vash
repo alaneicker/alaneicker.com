@@ -17,7 +17,9 @@
               height="@icon.height"
             >
               <title>@icon.title</title>
-              <path d="@icon.path" fill="@icon.fill"></path>
+              @icon.paths.forEach(function (path) {
+                <path d="@path" fill="@icon.fill" />
+              })
             </svg>
           </a>
         </li>
