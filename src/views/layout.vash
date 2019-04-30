@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>@model.title</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="Alan Eicker: Full-Stack Developer, Interface Engineer, and Design Systems Evangelist with Design Experience." />
+		<meta name="keywords" content="Alan, Eicker, developer, designer, engineer, front-end, creative, design, professional, Angular, React, Node.js, GraphQL, HTML, CSS, JavaScript" />
+		<meta name="author" content="Alan Eicker" />
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="application-name" content="Alan Eicker UI Engineer">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-title" content="Alan Eicker UI Engineer">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<meta name="theme-color" content="#000000">
+		<meta name="format-detection" content="telephone=no">
+		<base href="/">
+		<link rel="manifest" href="manifest.json">
+		<link rel="icon" sizes="192x192" href="/icon.png">
+		<link rel="icon" type="image/x-icon" href="favicon.ico">
+		<link rel="canonical" href="https://alaneicker.com" />
+		<link rel="stylesheet" href="/styles/app.css">
+	</head>
+	<body>
+    @html.block('body')
+	</body>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Tocca.js/2.0.3/Tocca.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/14.2.1/smooth-scroll.min.js"></script>
+	<script src="/scripts/app.min.js"></script>
+</html>
