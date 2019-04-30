@@ -1,6 +1,7 @@
 .logo {
   display: flex;
   text-transform: uppercase;
+  text-shadow: rem(1 1 1) darken($red, 25%);
   
   &:hover {
     text-decoration: none;

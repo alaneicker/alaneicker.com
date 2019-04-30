@@ -17,15 +17,18 @@
     padding: rem(0 16);
     border-bottom: rem(1) solid rgba(255, 255, 255, 0.4);
     line-height: rem(51);
+    text-shadow: rem(1 1 1) darken($red, 25%);
 
     &:hover {
       background: lighten($navy, 10%);
       text-decoration: none;
+      text-shadow: rem(1 1 1) darken($navy, 15%);
     }
   }
 
   & > li.is-active > a {
     background: lighten($navy, 10%);
+    text-shadow: rem(1 1 1) darken($navy, 15%);
   }
 
   @media (min-width: $breakpoint-medium) {

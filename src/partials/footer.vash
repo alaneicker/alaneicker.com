@@ -5,20 +5,22 @@
     </div>
     <ul class="u-align-center u-text-xs h-list">
       @model.socialIcons.forEach(function (icon) {
-        <a href="@icon.link" rel="noopener" target="_blank">
-          <svg 
-            xmlns="http://www.w3.org/2000/svg" 
-            xlinkHref="http://www.w3.org/1999/xlink" 
-            version="1.1" 
-            id="linkedin-icon"
-            viewBox="@icon.viewbox" 
-            width="@icon.width" 
-            height="@icon.height"
-          >
-            <title>@icon.title</title>
-            <path d="@icon.path" fill="@icon.fill"></path>
-          </svg>
-        </a>
+        <li>
+          <a href="@icon.link" rel="noopener" target="_blank">
+            <svg 
+              xmlns="http://www.w3.org/2000/svg" 
+              xlinkHref="http://www.w3.org/1999/xlink" 
+              version="1.1" 
+              id="@icon.title-icon"
+              viewBox="@icon.viewbox" 
+              width="@icon.width" 
+              height="@icon.height"
+            >
+              <title>@icon.title</title>
+              <path d="@icon.path" fill="@icon.fill"></path>
+            </svg>
+          </a>
+        </li>
       })
     </ul>
     <div class="u-align-center u-text-xs">
