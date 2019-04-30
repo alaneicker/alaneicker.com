@@ -1,0 +1,27 @@
+.h-list {
+  & > * {
+    display: inline-block;
+  }
+
+  & > * + * {
+    margin-left: rem(8);
+  }
+
+  &--comma-delimited {
+    & > * {
+      margin: 0;
+    }
+
+    & > *:not(:last-child):after {
+      content: ",";
+    }
+
+    & > * {
+      margin-right: rem(6);
+    }
+
+    & > :last-child:before {
+      content: "& ";
+    }
+  }
+}

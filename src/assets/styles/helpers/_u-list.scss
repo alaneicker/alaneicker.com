@@ -1,0 +1,8 @@
+.u-list {
+  list-style-type: disc;
+  margin-left: rem(17);
+
+  & > * + * {
+    margin-top: rem(16);
+  }
+}

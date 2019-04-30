@@ -1,0 +1,28 @@
+.u-flex--medium {
+  display: flex;
+  width: 100%;
+
+  &.u-flex--hr > * + * {
+    margin-left: rem(16);
+  }
+
+  &.u-flex--hr-2 > * + * {
+    margin-left: rem(32);
+  }
+
+  &.u-flex--hr-3 > * + * {
+    margin-left: rem(48);
+  }
+
+  &.u-flex--hr-reverse > * + * {
+    margin-right: rem(16);
+  }
+
+  &.u-flex--hr-2-reverse > * + * {
+    margin-right: rem(32);
+  }
+
+  &.u-flex--hr-3-reverse > * + * {
+    margin-right: rem(48);
+  }
+}

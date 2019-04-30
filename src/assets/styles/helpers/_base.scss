@@ -1,0 +1,77 @@
+// Base
+// ---------------------------------
+html,
+body,
+#root {
+  height: 100vh;
+}
+
+body {
+	background: no-repeat center/cover url($body-image);
+	background-attachment: fixed;
+	color: $navy;
+	font-weight: $font-normal;
+	flex-direction: column;
+	font-family: $font-poppins;
+	font-size: rem(16);
+	font-weight: $font-normal;
+	line-height: 1.7;
+	overflow-x: hidden;
+	-webkit-overflow-scrolling: touch;
+
+	@supports (-webkit-overflow-scrolling: touch) {
+		background-attachment: scroll;
+	}
+}
+
+strong,
+b {
+  font-weight: $font-bold;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+	color: $link-light-blue;
+	font-weight: 500;
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+b {
+  font-weight: $font-semibold;
+}
+
+p {
+  margin-top: rem(20);
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $font-poppins;
+	line-height: 1.2;
+}
+
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px dashed rgba(255,255,255,.3);
+	margin: rem(16) 0;
+	padding: 0;
+}
+
+section {
+	background: $white;
+	padding: rem(16);
+}
+
+@media (min-width: $breakpoint-large) {
+	section {
+		padding: rem(24);
+	}
+}
