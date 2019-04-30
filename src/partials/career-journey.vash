@@ -1,0 +1,5 @@
+<section id="career-journey">
+  <h2 class="u-text-xl u-text-semibold u-align-center--medium u-vr-5">
+    @model.headings.careerJourney
+  </h2>
+</section>

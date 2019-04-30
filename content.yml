@@ -40,15 +40,15 @@ socialIcons:
     width: 38px
 
 headings:
-  - skills: What I Do Best
-  - skillsList: Core Skills,
-  - otherSkillsList: Other Skills &amp; Tools
-  - currentInterests: Current Interests
-  - projects: GitHub
-  - pens: Codepens
-  - codeExperiments: Code Experiments
-  - careerJourney: Career Journey
-  - kudos: Kudos
+  skills: What I Do Best
+  skillsList: Core Skills,
+  otherSkillsList: Other Skills &amp; Tools
+  currentInterests: Current Interests
+  projects: GitHub
+  pens: Codepens
+  codeExperiments: Code Experiments
+  careerJourney: Career Journey
+  kudos: Kudos
 
 hero:
   heading: Hi, I'm Alan.
