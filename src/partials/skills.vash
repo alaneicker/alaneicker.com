@@ -2,4 +2,25 @@
   <h2 class="u-text-xl u-text-semibold u-align-center--medium u-vr-5">
     @model.headings.skills
   </h2>
+
+  <div class="u-flex--large u-flex--hr-3">
+    <div class="u-flex__item u-flex__item--grow">
+      <h2 class="u-text-lg u-text-semibold u-vr-3">@model.headings.skillsList</h2>
+      <div class="u-vr-6">
+        @model.coreSkills.forEach(function (skill) {
+          <div class="c-skill">
+            <div class="c-skill__label">@skill.label</div>
+            <div class="c-skill__track">
+              <div class="c-skill__bar" style="width: @(skill.rating / 10 * 100)%"></div>
+            </div>
+          </div>
+        })
+      </div>
+    </div>
+    <div class="u-flex__item u-flex__item--no-shrink">
+      <h2 class="u-text-lg u-text-semibold u-vr-3">@model.headings.projects</h2>
+      <h2 class="u-text-lg u-text-semibold u-vr-3">@model.headings.pens</h2>
+    </div>
+  </div>
+
 </section>

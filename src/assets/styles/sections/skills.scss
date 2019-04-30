@@ -1,0 +1,22 @@
+.c-skill {
+  display: flex;
+  align-items: center;
+
+  &__label {
+    text-align: right;
+    flex: 0 0 rem(100);
+  }
+
+  &__track {
+    background: $gray-5;
+    margin-left: rem(16);
+    flex: 1;
+    border-radius: rem(18);
+  }
+
+  &__bar {
+    height: rem(18);
+    background: $red;
+    border-radius: rem(18);
+  }
+}

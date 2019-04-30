@@ -41,7 +41,7 @@ socialIcons:
 
 headings:
   skills: What I Do Best
-  skillsList: Core Skills,
+  skillsList: Core Skills
   otherSkillsList: Other Skills &amp; Tools
   currentInterests: Current Interests
   projects: GitHub
@@ -106,29 +106,21 @@ pens:
     type: pen
 
 coreSkills:
-  - text: HTML5
-    icon: html5
+  - label: HTML5
     rating: 10
-  - text: CSS3
-    icon: css3
+  - label: CSS3
     rating: 10
-  - text: Sass
-    icon: sass
+  - label: Sass
     rating: 10
-  - text: JavaScript
-    icon: javascript
+  - label: JavaScript
     rating: 9.5
-  - text: Angular 5+
-    icon: angularjs
+  - label: Angular 5+
     rating: 9
-  - text: TypeScript
-    icon: typescript
+  - label: TypeScript
     rating: 9
-  - text: React
-    icon: react
+  - label: React
     rating: 9
-  - text: Vue.js
-    icon: vuejs
+  - label: Vue.js
     rating: 4
 
 otherSkills:
