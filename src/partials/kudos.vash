@@ -1,5 +1,20 @@
-<section id="kudos" class="u-background-light-gray">
+<section id="kudos" class="u-background-light-navy u-text-inverse">
   <h2 class="u-text-xl u-text-semibold u-align-center--medium u-vr-5">
     @model.headings.kudos
   </h2>
+  
+  <div class="u-flex--large u-flex--hr-2 u-flex--equalCols">
+    @model.kudos.forEach(function (kudo) {
+      <div class="u-flex__item">
+        <p>@kudo.text</p>
+        <hr class="is-hidden is-visible-medium" />
+        <dl class="u-vr-2-top">
+            <dt class="u-text-semibold">@kudo.name</dt>
+            <dd class="u-text-sm">@kudo.jobTitle</dd>
+            <dd class="u-text-sm">@kudo.company</dd>
+        </dl>
+      </div>
+    })
+  </div>
+
 </section>

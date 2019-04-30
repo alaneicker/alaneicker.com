@@ -5,3 +5,7 @@
 .u-background-light-gray {
   background-color: $gray-7;
 }
+
+.u-background-light-navy {
+  background-color: lighten($navy, 10%);
+}
