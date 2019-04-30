@@ -65,45 +65,35 @@ hero:
 
 # Profile section
 projects:
-  - link: https://github.com/alaneicker/brewlog
+  - url: https://github.com/alaneicker/brewlog
     text: Brew Review
-  - link: https://github.com/alaneicker/express-user-authentication
+  - url: https://github.com/alaneicker/express-user-authentication
     text: User Authentication Demo
-  - link: https://github.com/alaneicker/node-alaneicker-com
+  - url: https://github.com/alaneicker/node-alaneicker-com
     text: Personal Website
     type: project
-  - link: https://github.com/alaneicker/angular-graphql
+  - url: https://github.com/alaneicker/angular-graphql
     text: Angular 5 / GraphQL Demo
-    type: project
-  - link: https://www.npmjs.com/package/@alaneicker/js-form-validator
+  - url: https://www.npmjs.com/package/@alaneicker/js-form-validator
     text: js-form-Validator
-    type: project
-  - link: https://github.com/alaneicker/node-vash-boilerplate
+  - url: https://github.com/alaneicker/node-vash-boilerplate
     text: Node/Vash Project Boilerplate
-    type: project
 
 pens:
-  - link: https://codepen.io/alaneicker/pen/jKEVya
+  - url: https://codepen.io/alaneicker/pen/jKEVya
     text: Custom HTML5 Range Slider
-    type: pen
-  - link: https://codepen.io/alaneicker/pen/KvNBZZ
+  - url: https://codepen.io/alaneicker/pen/KvNBZZ
     text: React Yahoo News Feed
-    type: pen
-  - link: https://codepen.io/alaneicker/pen/VzxLaM
+  - url: https://codepen.io/alaneicker/pen/VzxLaM
     text: React Dropdown Component
-    type: pen
-  - link: https://codepen.io/alaneicker/pen/LjzjQB
+  - url: https://codepen.io/alaneicker/pen/LjzjQB
     text: React Fieldset Component
-    type: pen
-  - link: https://codepen.io/alaneicker/pen/KvMKEL
+  - url: https://codepen.io/alaneicker/pen/KvMKEL
     text: React Stateless Filter Table Component
-    type: pen
-  - link: https://codepen.io/alaneicker/pen/QMdRYb
+  - url: https://codepen.io/alaneicker/pen/QMdRYb
     text: React Stateless Google Map Component
-    type: pen
-  - link: https://codepen.io/alaneicker/pen/VQQOWv
+  - url: https://codepen.io/alaneicker/pen/VQQOWv
     text: Framework-less Template Rendering
-    type: pen
 
 coreSkills:
   - label: HTML5

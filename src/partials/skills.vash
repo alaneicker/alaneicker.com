@@ -19,7 +19,17 @@
     </div>
     <div class="u-flex__item u-flex__item--no-shrink">
       <h2 class="u-text-lg u-text-semibold u-vr-3">@model.headings.projects</h2>
+      <ul class="u-vr-4">
+        @model.projects.forEach(function(link) {
+          <li><a target="_blank" rel="noopener" href="@link.url">@link.text</a></li>
+        })
+      </ul>
       <h2 class="u-text-lg u-text-semibold u-vr-3">@model.headings.pens</h2>
+      <ul>
+        @model.pens.forEach(function(link) {
+          <li><a target="_blank" rel="noopener" href="@link.url">@link.text</a></li>
+        })
+      </ul>
     </div>
   </div>
 
