@@ -3,7 +3,7 @@
     @model.headings.skills
   </h2>
 
-  <div class="u-flex--large u-flex--hr-3">
+  <div class="u-flex--medium u-flex--hr-3">
     <div class="u-flex__item u-flex__item--grow">
       
       <h2 class="u-text-lg u-text-semibold u-vr-3">@model.headings.skillsList</h2>

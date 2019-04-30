@@ -188,7 +188,7 @@ careerJourney:
   - company: Allstate Insurance
     website: https://www.allstate.com
     location: Northbrook, IL
-    description: The Allstate Corporation is one of the largest insurance providers in the United States and one of the largest that is publicly held.
+    companyProfile: The Allstate Corporation is one of the largest insurance providers in the United States and one of the largest that is publicly held.
     postionsHeld:
       - jobTitle: Lead User Interface Engineer
         startDate: 2017
@@ -227,7 +227,7 @@ careerJourney:
   - company: RealPage Inc.
     website: https://www.realpage.com
     location: Chicago, IL
-    description: RealPage is an American multinational corporation that provides property management software solutions for the multifamily, commercial, single-family and vacation rental housing industries.
+    companyProfile: RealPage is an American multinational corporation that provides property management software solutions for the multifamily, commercial, single-family and vacation rental housing industries.
     postionsHeld:
       - jobTitle: Lead User Interface Engineer
         startDate: 2014
@@ -254,7 +254,7 @@ careerJourney:
   - company: Restaurant.com
     website: https://www.restaurant.com
     location: Arlington Heights, IL
-    description: Restaurant.com is the nation’s largest dining deals site, offering more than 40,000 deals at thousands of restaurants nationwide.
+    companyProfile: Restaurant.com is the nation’s largest dining deals site, offering more than 40,000 deals at thousands of restaurants nationwide.
     postionsHeld:
       - jobTitle: Senior User Interface Engineer
         startDate: 2010
@@ -272,7 +272,7 @@ careerJourney:
   - company: optionsXpress
     website: https://www.schwab.com
     location: Chicago, IL
-    description: optionsXpress is a service of the Charles Schwab Corporation that provides an electronic trading platform for investing online, specializing in the trading of options.
+    companyProfile: optionsXpress is a service of the Charles Schwab Corporation that provides an electronic trading platform for investing online, specializing in the trading of options.
     postionsHeld:
       - jobTitle: Web Designer / User Interface Engineer
         startDate: 2008
@@ -289,7 +289,7 @@ careerJourney:
   - company: Leader Graphic Design
     website: http://www.leadergraphics.com
     location: Rolling Meadows, IL
-    description: 
+    companyProfile: 
     postionsHeld:
       - jobTitle: Web Designer / User Interface Engineer
         startDate: 2007
@@ -333,8 +333,8 @@ kudos:
     jobTitle: Product Designer
     company: RealPage
     text: > 
-      If you had 5 Alans you could rule the software universe. So I recommend hiring him and having 
-      him train 4 other guys to be as good as he is. Alan is the kind of front-end developer UX 
+      If you had five Alans you could rule the software universe. So I recommend hiring him and having 
+      him train four other guys to be as good as he is. Alan is the kind of front-end developer UX 
       designers like myself dream of: Can work directly out of Photoshop comps, leveraging all 
       assets therein with zero confusion, follows wire-frames to the letter, focuses like a laser 
       on delivering high-quality front-end code that is virtually indistinguishable from the comp 

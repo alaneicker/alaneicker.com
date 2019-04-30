@@ -1,0 +1,32 @@
+.c-career-journey {
+  &__positions-info {
+    margin-left: 0;
+  }
+
+  @media(min-width: $breakpoint-medium) {
+    display: flex;
+
+    &__company-info {
+      flex: 0 0 rem(300);
+      text-align: right;
+    }
+
+    &__positions-info {
+      margin-left: rem(24);
+      padding-left: rem(24);
+      border-left: rem(5) dashed $gray-5;
+      position: relative;
+
+      &:before {
+        content: '';
+        display: block;
+        height: rem(18);
+        width: rem(18);
+        background: $navy;
+        position: absolute;
+        left: rem(-11);
+        transform: rotate(45deg);
+      }
+    }
+  }
+}

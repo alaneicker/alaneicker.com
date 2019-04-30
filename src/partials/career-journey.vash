@@ -2,4 +2,35 @@
   <h2 class="u-text-xl u-text-semibold u-align-center--medium u-vr-5">
     @model.headings.careerJourney
   </h2>
+
+  @model.careerJourney.forEach(function (job) {
+    <div class="c-career-journey">
+      <div class="c-career-journey__company-info">
+        <h3 class="u-vr">
+          <a class="u-text-semibold u-text-md" href="@job.website" rel="noopener" target="_blank">
+            @job.company
+          </a>
+        </h3>
+        <h5 class="u-text-semibold">@job.location</h5>
+        <p>@job.companyProfile</p>
+      </div>
+      <div class="c-career-journey__positions-info">
+        <ul>
+          @job.postionsHeld.forEach(function (position) {
+            <li>
+              <h3 class="u-text-semibold u-vr">@position.jobTitle</h3>
+              <h4 class="u-text-semibold u-vr-2">@position.startDate - @position.endDate</h4>
+              <ul class="u-list">
+                @position.highlights.forEach(function (highlight) {
+                  <li>@highlight</li>
+                })
+              </ul>
+              <div class="u-vr-4"></div>
+            </li>
+          })
+        </ul>
+      </div>
+    </div>
+  })
+
 </section>
