@@ -19,7 +19,7 @@
           </li>
         })
       </ul>
-      <button class="is-hidden--medium c-btn c-btn--mobile">
+      <button id="mobile-nav-btn" class="is-hidden--medium c-btn c-btn--mobile">
         Menu
       </button>
     </nav>

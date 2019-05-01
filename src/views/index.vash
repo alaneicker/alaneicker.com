@@ -4,7 +4,7 @@
       <div class="layout__header">
         @html.include("../partials/header")
       </div>
-      <div class="layout__body">
+      <div id="layout-body" class="layout__body">
         @html.include("../partials/hero")
         @html.include("../partials/skills")
         @html.include("../partials/code-experiements")
