@@ -22,7 +22,7 @@
   document.querySelector('#layout-body').addEventListener('scroll', function (e) {
 
     const getTopOffset = function (id) {
-      return document.querySelector(id).offsetTop;
+      return document.querySelector(id).offsetTop - 60;
     };
 
     const setSelected = function (hash) {
@@ -61,6 +61,7 @@
     setSelected(selectedNavItem);
   });
 
+  // PWA setup
   const registerServiceWorker = function () {
     navigator.serviceWorker.register('service-worker.js')
       .then(reg => {
@@ -87,4 +88,9 @@
 
   ('serviceWorker' in navigator && registerServiceWorker());
   ('beforeinstallprompt' in window && addBeforeInstallPromtEvent());
+
+  // Swipe detection to close mobile #main-nav
+  document.body.addEventListener('swipeleft', function () {
+    document.querySelector('#main-nav').classList.remove('is-open');
+  });
 }());
