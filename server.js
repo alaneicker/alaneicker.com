@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
+const compression = require('compression')
 const port = process.env.PORT || 4000;
 const env = process.env.NODE_ENV || 'development';
 const model = require('yamljs').load('content.yml');
@@ -10,6 +11,7 @@ app.set('views', `${__dirname}/src/views`);
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
+app.use(compression());
 app.use(express.static(`${__dirname}/public`));
 
 app.get('/', (req, res) => {
