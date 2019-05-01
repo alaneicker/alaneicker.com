@@ -140,7 +140,7 @@ currentInterests:
   - Python
 
 # Featured Projects section
-featuredProject:
+codeExperiments:
   - heading: Brew Review
     imgUrl: /images/brew-review-home-min.png
     prototypeUrl: https://brew-reviews.herokuapp.com

@@ -1,10 +1,11 @@
 .c-btn {
   display: inline-block;
+  border-radius: rem(4);
   border: none;
   padding: rem(8 16);
   margin: 0;
   text-decoration: none;
-  background-color: $navy;
+  background-color: lighten($navy, 10%);
   color: $white;
   font-family: inherit;
   font-size: inherit;
@@ -16,7 +17,16 @@
   -moz-appearance: none;
 
   &:hover {
-    background-color: darken($navy, 10%);
+    background-color: $navy;
+    text-decoration: none;
+  }
+}
+
+.c-btn--red {
+  background: $red;
+
+  &:hover {
+    background: $red-2;
   }
 }
 

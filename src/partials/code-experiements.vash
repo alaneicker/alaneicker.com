@@ -2,4 +2,33 @@
   <h2 class="u-text-xl u-text-semibold u-align-center--medium u-vr-5">
     @model.headings.codeExperiments
   </h2>
+
+  @model.codeExperiments.forEach(function (project, i) {
+    <div class="u-flex--medium @(i % 2 != 0 ? 'u-flex--reverse u-flex--hr-2-reverse' : 'u-flex--hr-2') @(model.codeExperiments.length - 1 != i ? 'u-vr-5' : '')">
+      <div class="u-flex__item">
+        <a href="@project.prototypeUrl" rel="noopener" target="_blank">
+          <img 
+            class="u-vr featured-image" 
+            src="@project.imgUrl"
+            alt="Brew Review Image">
+        </a>
+      </div>
+      <div class="u-flex_item">
+        <h3 class="u-text-lg u-text-semibold">@project.title</h3>
+        <div>@project.description</div>
+        <h5 class="u-text-bold u-vr u-vr-2-top">Technologies Used</h5>
+        <ul class="h-list h-list--comma-delimited">
+          @project.technologies.forEach(function (technology) {
+            <li>@technology</li>
+          })
+        </ul>
+        <div class="u-vr-2-top">
+          <a class="c-btn" href="@project.prototypeUrl" rel="noopener" target="_blank">Demo</a>
+          <a class="c-btn" href="@project.githubUrl" rel="noopener" target="_blank">GitHub</a>
+        </div>
+      </div>
+    </div>
+})
+
+<p class="u-align-center--medium u-text-xs u-vr-3-top"><strong>Please note:</strong> Prototypes are hosted on free Heroku servers which automatically go to sleep after 30 minutes of inactivity. Please be patient as it may take a moment to restart the server.</p>
 </section>
