@@ -7,7 +7,7 @@
     <div class="u-flex__item u-flex__item--grow">
       
       <h2 class="u-text-lg u-text-semibold u-vr-3">@model.headings.skillsList</h2>
-      <div class="u-vr-6">
+      <div class="u-vr-4">
         @model.coreSkills.forEach(function (skill) {
           <div class="c-skill">
             <div class="c-skill__label">@skill.label</div>
@@ -19,7 +19,7 @@
       </div>
 
       <h2 class="u-text-lg u-text-semibold u-vr-3">@model.headings.otherSkillsList</h2>
-      <div class="u-vr-6">
+      <div class="u-vr-4">
         <ul class="h-list h-list--comma-delimited">
           @model.otherSkills.forEach(function (skill) {
             <li>@skill</li>
@@ -28,7 +28,7 @@
       </div>
 
       <h2 class="u-text-lg u-text-semibold u-vr-3">@model.headings.currentInterests</h2>
-      <ul class="h-list h-list--comma-delimited">
+      <ul class="h-list h-list--comma-delimited u-vr-2">
         @model.currentInterests.forEach(function (interest) {
           <li>@interest</li>
         })
