@@ -17,7 +17,7 @@
     padding: rem(0 16);
     border-bottom: rem(1) solid rgba(255, 255, 255, 0.4);
     line-height: rem(51);
-    text-shadow: rem(1 1 1) darken($red, 25%);
+    text-shadow: rem(1 1 1) darken($navy, 25%);
 
     &:hover {
       background: lighten($navy, 10%);
@@ -41,6 +41,7 @@
     & > li > a {
       border: none;
       padding: rem(0 8);
+      text-shadow: rem(1 1 1) darken($red, 25%);
     }
   }
 
