@@ -1,22 +1,28 @@
 (function () {
+  const toggleMobileNav = function () {
+    const mobileNav = document.querySelector('#main-nav');
+    const isOpen = mobileNav.classList.contains('is-open');
+    mobileNav.classList[isOpen ? 'remove' : 'add']('is-open');
+  };
+
   // Sets initial active #main-nav menu item
   document.querySelector('#main-nav').children[0].classList.add('is-active');
-
+  
   // Sets active #main-nav menu item on click
-  Array.prototype.forEach.call(document.querySelectorAll('.local-link'), function (link, i) {
+  Array.prototype.forEach.call(document.querySelectorAll('.local-link'), function (link) {
     link.addEventListener('click', function (e) {
       const siblingLinks = e.target.parentElement.parentElement.children;
       [...siblingLinks].forEach(function (link) { link.classList.remove('is-active') });
       e.target.parentElement.classList.add('is-active');
+      toggleMobileNav();
     });
   });
 
   // toggles mobile version of #main-nav
-  document.querySelector('#mobile-nav-btn').addEventListener('click', function () {
-    const mobileNav = document.querySelector('#main-nav');
-    const isOpen = mobileNav.classList.contains('is-open');
-    mobileNav.classList[isOpen ? 'remove' : 'add']('is-open');
-  });
+  document.querySelector('#mobile-nav-btn').addEventListener('click', toggleMobileNav);
+
+  // Swipe detection to close mobile #main-nav
+  document.body.addEventListener('swipeleft', toggleMobileNav);
 
   // Auto-selects #main-nav menu item on scroll
   document.querySelector('#layout-body').addEventListener('scroll', function (e) {
@@ -88,9 +94,4 @@
 
   ('serviceWorker' in navigator && registerServiceWorker());
   ('beforeinstallprompt' in window && addBeforeInstallPromtEvent());
-
-  // Swipe detection to close mobile #main-nav
-  document.body.addEventListener('swipeleft', function () {
-    document.querySelector('#main-nav').classList.remove('is-open');
-  });
 }());
