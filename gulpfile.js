@@ -43,6 +43,7 @@ gulp.task('copy-images', function() {
 });
 
 gulp.task('copy-assets', [
+  'copy-scripts',
   'copy-pwa',
   'copy-favicon',
   'copy-images',
