@@ -9,7 +9,7 @@
   document.querySelector('#main-nav').children[0].classList.add('is-active');
   
   // Sets active #main-nav menu item on click
-  Array.prototype.forEach.call(document.querySelectorAll('.local-link'), function (link) {
+  Array.prototype.forEach.call(document.querySelectorAll('.jump-link'), function (link) {
     link.addEventListener('click', function (e) {
       const siblingLinks = e.target.parentElement.parentElement.children;
       [...siblingLinks].forEach(function (link) { link.classList.remove('is-active') });
@@ -94,4 +94,9 @@
 
   ('serviceWorker' in navigator && registerServiceWorker());
   ('beforeinstallprompt' in window && addBeforeInstallPromtEvent());
+
+  // Image lazy loading
+  const lazyLoadInstance = new LazyLoad({
+    elements_selector: '.lazy'
+  });
 }());

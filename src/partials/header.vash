@@ -13,7 +13,7 @@
       <ul id="main-nav" class="main-nav">
         @model.nav.forEach(function (link) {
           <li>
-            <a class="local-link" href="#@link.section">
+            <a class="jump-link" href="#@link.section">
               @link.text
             </a>
           </li>

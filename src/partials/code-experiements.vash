@@ -8,9 +8,9 @@
       <div class="u-flex__item">
         <a href="@project.prototypeUrl" rel="noopener" target="_blank">
           <img 
-            class="u-vr code-experiment-preview-image" 
-            src="@project.imgUrl"
-            alt="Brew Review Image">
+            class="u-vr code-experiment-preview-image lazy" 
+            alt="Brew Review Image"
+            data-src="@project.imgUrl">
         </a>
       </div>
       <div class="u-flex_item">
