@@ -10,6 +10,7 @@ body {
 	background: no-repeat center/cover url($body-image);
 	background-attachment: fixed;
 	color: $navy;
+	font-display: auto;
 	font-weight: $font-normal;
 	flex-direction: column;
 	font-family: $font-poppins;
