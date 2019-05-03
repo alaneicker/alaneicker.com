@@ -1,20 +1,11 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass');
 sass.compiler = require('node-sass');
- 
-gulp.task('babel', () => {
-  return gulp
-    .src('src/assets/scripts/*.js')
-    .pipe(babel({
-        presets: ['@babel/preset-env']
-    }))
-    .pipe(gulp.dest('public/scripts'));
-});
 
 gulp.task('sass', () => {
   return gulp
     .src('src/assets/styles/app.scss')
-    .pipe(sass({outputStyle: 'uglifyed'}).on('error', sass.logError))
+    .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
     .pipe(gulp.dest('public/styles')); 
 });
 
