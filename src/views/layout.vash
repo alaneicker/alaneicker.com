@@ -19,7 +19,7 @@
 		<link rel="manifest" href="manifest.json">
 		<link rel="icon" sizes="192x192" href="/icon.png">
 		<link rel="icon" type="image/x-icon" href="favicon.ico">
-		<link rel="canonical" href="https://alaneicker.com" />
+		<link rel="canonical" href="https://www.alaneicker.com" />
 		<link rel="stylesheet" href="/styles/app.css">
 	</head>
 	<body>
