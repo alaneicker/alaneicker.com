@@ -1,5 +1,5 @@
 (function () {
-  const toggleMobileNav = function () {
+  const toggleMobileNav = () => {
     const mobileNav = document.querySelector('#main-nav');
     const isOpen = mobileNav.classList.contains('is-open');
     mobileNav.classList[isOpen ? 'remove' : 'add']('is-open');
@@ -9,10 +9,10 @@
   document.querySelector('#main-nav').children[0].classList.add('is-active');
   
   // Sets active #main-nav menu item on click
-  Array.prototype.forEach.call(document.querySelectorAll('.jump-link'), function (link) {
-    link.addEventListener('click', function (e) {
+  Array.prototype.forEach.call(document.querySelectorAll('.jump-link'), link => {
+    link.addEventListener('click', e => {
       const siblingLinks = e.target.parentElement.parentElement.children;
-      [...siblingLinks].forEach(function (link) { link.classList.remove('is-active') });
+      [...siblingLinks].forEach(link => { link.classList.remove('is-active') });
       e.target.parentElement.classList.add('is-active');
       toggleMobileNav();
     });
@@ -25,17 +25,17 @@
   document.body.addEventListener('swipeleft', toggleMobileNav);
 
   // Auto-selects #main-nav menu item on scroll
-  document.querySelector('#layout-body').addEventListener('scroll', function (e) {
+  document.querySelector('#layout-body').addEventListener('scroll', e => {
 
-    const getTopOffset = function (id) {
+    const getTopOffset = id => {
       return document.querySelector(id).offsetTop - 60;
     };
 
-    const setSelected = function (hash) {
+    const setSelected = hash => {
       const element = document.querySelector('#main-nav > li > [href="' + hash + '"]');
       const siblingLinks = element.parentElement.parentElement.children;
       
-      [...siblingLinks].forEach(function (link) { link.classList.remove('is-active') });
+      [...siblingLinks].forEach(link => { link.classList.remove('is-active') });
       
       element.parentElement.classList.add('is-active'); 
     };
@@ -68,7 +68,7 @@
   });
 
   // PWA setup
-  const registerServiceWorker = function () {
+  const registerServiceWorker = () => {
     navigator.serviceWorker.register('service-worker.js')
       .then(reg => {
         console.log('[ServiceWorker] Registered');
@@ -77,7 +77,7 @@
       });
   };
 
-  const addBeforeInstallPromtEvent = function () {
+  const addBeforeInstallPromtEvent = () => {
     window.addEventListener('beforeinstallprompt', e => {
           
       setTimeout(() => {
