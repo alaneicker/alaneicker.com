@@ -83,6 +83,8 @@ projects:
     text: Node/Vash Project Boilerplate
 
 pens:
+  - url: https://codepen.io/alaneicker/pen/QRwMpq?editors=1010
+    text: React Wrapped in Custom Element
   - url: https://codepen.io/alaneicker/pen/jKEVya
     text: Custom HTML5 Range Slider
   - url: https://codepen.io/alaneicker/pen/KvNBZZ
