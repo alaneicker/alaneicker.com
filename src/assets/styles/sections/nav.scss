@@ -18,6 +18,7 @@
     border-bottom: rem(1) solid rgba(255, 255, 255, 0.4);
     line-height: rem(51);
     text-shadow: rem(1 1 1) darken($navy, 25%);
+    transition: background .2s linear;
 
     &:hover {
       background: lighten($navy, 10%);
