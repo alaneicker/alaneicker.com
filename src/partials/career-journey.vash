@@ -36,8 +36,8 @@
   <div class="u-vr"></div>
   
   <div class="u-align-center">
-    <a rel="noopener" target="_blank" href="@model.resumeLink">
-      Download R‌&eacute;sum‌&eacute;
+    <a class="c-btn" rel="noopener" target="_blank" href="@model.resumeLink">
+      Download Resum‌&eacute;
     </a>
   </div>
 
