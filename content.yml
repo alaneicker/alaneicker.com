@@ -291,18 +291,18 @@ careerJourney:
             register for local investment seminars and free online webinars.
           - Built landing pages for marketing initiatives.
           - Designed and developed email newsletters for integration with ExactTarget.
-  - company: Leader Graphic Design
-    website: http://www.leadergraphics.com
-    location: Rolling Meadows, IL
-    companyProfile: 
-    postionsHeld:
-      - jobTitle: Web Designer / User Interface Engineer
-        startDate: 2007
-        endDate: 2008
-        highlights:
-          - Worked with web developers to update and maintain client websites
-          - Designed and built website templates 
-          - Conducted code audits to ensure quality
+  # - company: Leader Graphic Design
+  #   website: http://www.leadergraphics.com
+  #   location: Rolling Meadows, IL
+  #   companyProfile: 
+  #   postionsHeld:
+  #     - jobTitle: Web Designer / User Interface Engineer
+  #       startDate: 2007
+  #       endDate: 2008
+  #       highlights:
+  #         - Worked with web developers to update and maintain client websites
+  #         - Designed and built website templates 
+  #         - Conducted code audits to ensure quality
 
 # Resume Link
 resumeLink: https://drive.google.com/file/d/1cQoPfn6pmt79m9d3uvyXItMd3nBAJTBC/view?usp=sharing
