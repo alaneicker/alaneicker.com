@@ -32,5 +32,13 @@
       </div>
     </div>
   })
+  
+  <div class="u-vr"></div>
+  
+  <div class="u-align-center">
+    <a class="c-btn" rel="noopener" target="_blank" href="@model.resumeLink">
+      Download Resum‌&eacute;
+    </a>
+  </div>
 
 </section>
