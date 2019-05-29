@@ -111,12 +111,10 @@ coreSkills:
     rating: 9.5
   - label: Angular 5+
     rating: 9
+  - label: React 16+
+    rating: 9
   - label: TypeScript
-    rating: 9
-  - label: React
-    rating: 9
-  - label: Vue.js
-    rating: 4
+    rating: 7
 
 otherSkills:
   - Responsive UI Architecture
