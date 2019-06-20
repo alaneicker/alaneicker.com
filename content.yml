@@ -83,6 +83,8 @@ projects:
     text: Node/Vash Project Boilerplate
 
 pens:
+  - url: https://codepen.io/alaneicker/pen/qzRRKZ
+    text: Screen Reader Accessible Form
   - url: https://codepen.io/alaneicker/pen/GagBpw
     text: React Wrapped in Custom Element
   - url: https://codepen.io/alaneicker/pen/jKEVya
