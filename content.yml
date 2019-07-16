@@ -114,21 +114,22 @@ coreSkills:
   - label: React 16+
     rating: 9
   - label: Redux
-    rating: 8.5
+    rating: 8
   - label: Angular 5+
     rating: 8
   - label: TypeScript
     rating: 7
+  - label: Node
+    rating: 8
+  - label: MongoDB
+    rating: 6
+  - label: GraphQL
+    rating: 5
 
 otherSkills:
   - Responsive UI Architecture
   - Progressive Web Apps
   - Accessibility
-  - Node.js
-  - Express
-  - MongoDB
-  - Mongoose
-  - GraphQL
   - MySQL
   - Jasmine
   - Jest
@@ -137,8 +138,6 @@ otherSkills:
   - Git/GitHub
   - Visual Studio Code
   - Postman
-  - Sequel Pro
-  - Photoshop
 
 currentInterests:
   - Web Components
