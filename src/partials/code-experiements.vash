@@ -14,7 +14,7 @@
         </a>
       </div>
       <div class="u-flex_item">
-        <h3 class="u-text-lg u-text-semibold">@project.title</h3>
+        <h3 class="u-text-lg u-text-semibold">@project.heading</h3>
         <div>@project.description</div>
         <h5 class="u-text-bold u-vr u-vr-2-top">Technologies Used</h5>
         <ul class="h-list h-list--comma-delimited">
