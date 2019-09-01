@@ -79,6 +79,8 @@ projects:
     text: Angular 5 / GraphQL Demo
   - url: https://www.npmjs.com/package/@alaneicker/js-form-validator
     text: js-form-Validator
+  - url: https://github.com/alaneicker/react-boilerplate
+    text: React Bolierplate
   - url: https://github.com/alaneicker/node-vash-boilerplate
     text: Node/Vash Project Boilerplate
 
