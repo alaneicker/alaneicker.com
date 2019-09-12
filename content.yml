@@ -72,6 +72,8 @@ projects:
     text: Brew Review
   - url: https://github.com/alaneicker/express-user-authentication
     text: User Authentication Demo
+  - url: https://github.com/alaneicker/json-db
+    text: JsonDB - JSON based data storeage utility
   - url: https://github.com/alaneicker/node-alaneicker-com
     text: Personal Website
     type: project
